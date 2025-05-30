@@ -75,7 +75,7 @@ export const CollectionArchive: React.FC<Props> = props => {
   }, [])
 
   useEffect(() => {
-    if (!isLoading && typeof results.page !== 'undefined') {
+    if (typeof window !== 'undefined' && !isLoading && typeof results.page !== 'undefined') {
       // scrollToRef()
     }
   }, [isLoading, scrollToRef, results])

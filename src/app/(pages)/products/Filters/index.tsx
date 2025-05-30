@@ -15,7 +15,7 @@ const Filters = ({ categories }: { categories: Category[] }) => {
 
   const handleCategories = (categoryId: string) => {
     if (categoryFilters.includes(categoryId)) {
-      const updatedCategories = categoryFilters.filter(id => id !== categoryId)
+      const updatedCategories = categoryFilters.filter((id: any) => id !== categoryId)
 
       setCategoryFilters(updatedCategories)
     } else {

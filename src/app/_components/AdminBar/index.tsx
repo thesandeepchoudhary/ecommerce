@@ -25,7 +25,7 @@ export const AdminBar: React.FC<{
     if (user) {
       setShow(true)
     }
-  }, [user])
+  }, [user, show])
 
   const isAdmin = user?.roles?.includes('admin')
 
