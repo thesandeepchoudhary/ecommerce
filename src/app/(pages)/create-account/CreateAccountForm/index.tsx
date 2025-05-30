@@ -66,6 +66,7 @@ const CreateAccountForm: React.FC = () => {
         else router.push(`/`)
         window.location.href = '/'
       } catch (_) {
+        setLoading(false)
         clearTimeout(timer)
         setError('There was an error with the credentials provided. Please try again.')
       }
